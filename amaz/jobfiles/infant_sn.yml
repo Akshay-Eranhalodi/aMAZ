@@ -1,15 +1,15 @@
 name: infantjun
 parameters:
 - name: channelname
-  value: '2024-08-28'
+  value: '2024-09-28'
 - name: date
   value: '2024-08-28'
 - name: deltat
-  value: 1
+  value: 2
 - name: mindet
   value: 1
 - name: maxdet
-  value: 8
+  value: 17
 mongo:
   prefix: infantEval
   reset: false
@@ -29,7 +29,7 @@ task:
     - unit: T3PlainUnitExecutor
       config:
         target:
-          unit: StreamTokenGenerator
+          unit: T3ZTFArchiveTokenGenerator
           config:
             date_str: '{{ job.parameters.date }}'
             delta_t: '{{ job.parameters.deltat }}'

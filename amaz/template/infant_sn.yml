@@ -31,7 +31,7 @@ task:
       - unit: T3PlainUnitExecutor
         config:
           target:
-            unit: StreamTokenGenerator
+            unit: T3ZTFArchiveTokenGenerator
             config:
               date_str: "{{ job.parameters.date }}"
               delta_t: "{{ job.parameters.deltat }}"

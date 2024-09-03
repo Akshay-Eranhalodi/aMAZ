@@ -1,0 +1,13 @@
+infant_sn.yml:
+  name: infantjun
+  parameters:
+  - name: channelname
+    value: '2024-09-28'
+  - name: date
+    value: '2024-08-28'
+  - name: deltat
+    value: 2
+  - name: mindet
+    value: 1
+  - name: maxdet
+    value: 17
